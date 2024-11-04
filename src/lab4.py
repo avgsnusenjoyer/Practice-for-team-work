@@ -4,9 +4,6 @@ class PreciousStone:
         self.__price = price
         self.__name = name
 
-        self.public_number_field = 0
-        self.public_string_field = "Default"
-
     def get_carats(self):
         return self.__carats
     
@@ -30,19 +27,18 @@ class PreciousStone:
     
     def __repr__(self):
         return f"PreciousStone({self.__name}, {self.__carats}, {self.__price})"
-
-    def __del__(self):
-        print(f"PreciousStone {self.__name} is being deleted")
+    
+    def details(self):
+        return f"{self}"
 
 def main():
-    stone1 = PreciousStone(1.5, 5000, "Diamond")
-    stone2 = PreciousStone(2.0, 10000, "Ruby")
-    stone3 = PreciousStone(0.8, 2000, "Sapphire")
+    Diamond = PreciousStone(1.5, 5000, "Diamond")
+    Ruby = PreciousStone(2.0, 10000, "Ruby")
+    Sapphire = PreciousStone(0.8, 2000, "Sapphire")
 
-    for stone in [stone1, stone2, stone3]:
-        print(stone)
-        print("Public Number Field:", stone.public_number_field)
-        print("Public String Field:", stone.public_string_field)
+    stones = [Diamond, Ruby, Sapphire]
+    for stone in stones:
+        print(stone.details())
         print()
 
 if __name__ == "__main__":
