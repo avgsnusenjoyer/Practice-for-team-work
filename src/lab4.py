@@ -32,9 +32,9 @@ class PreciousStone:
         return f"{self}"
 
 def main():
-    Diamond = PreciousStone(1.5, 5000, "Diamond")
-    Ruby = PreciousStone(2.0, 10000, "Ruby")
-    Sapphire = PreciousStone(0.8, 2000, "Sapphire")
+    diamond = PreciousStone(1.5, 5000, "Diamond")
+    ruby = PreciousStone(2.0, 10000, "Ruby")
+    sapphire = PreciousStone(0.8, 2000, "Sapphire")
 
     stones = [Diamond, Ruby, Sapphire]
     for stone in stones:
