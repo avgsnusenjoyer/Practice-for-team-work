@@ -36,7 +36,7 @@ def main():
     ruby = PreciousStone(2.0, 10000, "Ruby")
     sapphire = PreciousStone(0.8, 2000, "Sapphire")
 
-    stones = [Diamond, Ruby, Sapphire]
+    stones = [diamond, ruby, sapphire]
     for stone in stones:
         print(stone.details())
         print()
